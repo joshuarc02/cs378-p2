@@ -1,5 +1,6 @@
 import './App.css';
 import MenuItem from './components/MenuItem';
+import MenuHeader from './components/MenuHeader';
 
 // import 'bootstrap/dist/css/bootstrap.min.css'; // This imports bootstrap css styles. You can use bootstrap or your own classes by using the className attribute in your elements.
 
@@ -82,19 +83,7 @@ const menuItems = [
 function App() {
   return (
     <div>
-      <div class="row logo-row justify-content-center">
-      <img id="logo" src="/images/logo.png" alt="Logo for Human Food Place. The letters look like wheat."/>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="row text-center">
-            <div class="col" id="fancy_catchline">We Love to "Cook" the "Food"</div>
-          </div>
-          <div class="row text-center">
-            <div class="col" id="review_catchline">"Our favorite 'place' to 'eat' at!" - Best Human Eater</div>
-          </div>
-        </div>
-      </div>
+      <MenuHeader/>
       <div className="items">
         {/* Display menu items dynamicaly here by iterating over the provided menuItems */}
         {menuItems.map((menuItem) => (
