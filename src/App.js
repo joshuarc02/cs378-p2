@@ -82,10 +82,24 @@ const menuItems = [
 function App() {
   return (
     <div>
-      <h1>Menu</h1>
-      <div className="menu">
+      <div class="row logo-row justify-content-center">
+      <img id="logo" src="/images/logo.png" alt="Logo for Human Food Place. The letters look like wheat."/>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="row text-center">
+            <div class="col" id="fancy_catchline">We Love to "Cook" the "Food"</div>
+          </div>
+          <div class="row text-center">
+            <div class="col" id="review_catchline">"Our favorite 'place' to 'eat' at!" - Best Human Eater</div>
+          </div>
+        </div>
+      </div>
+      <div className="items">
         {/* Display menu items dynamicaly here by iterating over the provided menuItems */}
-        <MenuItem title={menuItems[0].title} /> {/* Example for how to use a component */}
+        {menuItems.map((menuItem) => (
+        <MenuItem id={menuItem.id} title={menuItem.title} description={menuItem.description} imageName={menuItem.imageName} price={menuItem.price}/>
+        ))}
       </div>
     </div>
   );
