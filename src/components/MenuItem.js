@@ -8,7 +8,7 @@ import React from 'react';
 const MenuItem = ({ title, description, imageName, price }) => {
     return (
         <div class="row item">
-        <div class="col-md-auto pic align-self-center"><img class="pic" src={require("../images/" + imageName)} alt={description}/></div>
+        <div class="col-md-auto pic align-self-center"><img class="pic" src={require("../images/" + imageName) /* found this short way from https://stackabuse.com/importing-images-with-react/ */} alt={description}/></div>
         <div class="d-flex flex-column col item-text">
           <div class="row">
             <div class="col title">{title}</div>
