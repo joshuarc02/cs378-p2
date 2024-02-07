@@ -9,10 +9,10 @@ const MenuHeader = ({}) => {
         <div class="row">
           <div class="col">
             <div class="row text-center">
-              <div class="col" id="fancy_catchline">We Love to "Cook" the "Food"</div>
+              <div class="col" id="fancy_catchline">Making you full for 50 years</div>
             </div>
             <div class="row text-center">
-              <div class="col" id="review_catchline">"Our favorite 'place' to 'eat' at!" - Best Human Eater</div>
+              <div class="col" id="review_catchline">"Our favorite place to eat at" - Rob Boss</div>
             </div>
           </div>
         </div>
